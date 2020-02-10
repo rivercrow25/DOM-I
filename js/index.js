@@ -114,3 +114,24 @@ phone.textContent = siteContent['contact']['phone']
 email.textContent = siteContent['contact']['email']
 
 footer.textContent = siteContent['footer']['copyright']
+
+
+const parent = document.querySelector('nav')
+console.log(parent)
+
+navArray.forEach(item => [
+  item.style.color = "green"
+])
+
+const nav7 = document.createElement('A')
+const nav8 = document.createElement('A')
+nav7.setAttribute('href', '#')
+nav8.setAttribute('href', '#')
+nav7.textContent = 'nav7'
+nav8.textContent = 'nav8'
+
+parent.append(nav7)
+parent.prepend(nav8)
+
+console.log(nav7)
+console.log(nav8)
