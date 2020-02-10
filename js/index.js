@@ -43,10 +43,21 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const navArray = document.querySelectorAll('a')
 
+const Contenth4Array = document.querySelectorAll('h4')
+
+const textArray = document.querySelectorAll('.text-content p')
+
 const headerh1 = document.querySelector('.cta-text h1')
 const headerImg = document.querySelector('.cta img')
 const headerButton = document.querySelector('.cta button')
-console.log(headerButton)
+
+const middleImg = document.querySelector('.middle-img')
+
+const contacth4 = document.querySelector('.contact h4')
+const contact = document.querySelectorAll('.contact p')
+
+const footer = document.querySelector('footer p')
+console.log(footer)
 
 const nav1 = navArray[0]
 const nav2 = navArray[1]
@@ -55,6 +66,21 @@ const nav4 = navArray[3]
 const nav5 = navArray[4]
 const nav6 = navArray[5]
 
+const features = Contenth4Array[0]
+const about = Contenth4Array[1]
+const services = Contenth4Array[2]
+const product = Contenth4Array[3]
+const vision = Contenth4Array[4]
+
+const text1 = textArray[0]
+const text2 = textArray[1]
+const text3 = textArray[2]
+const text4 = textArray[3]
+const text5 = textArray[4]
+
+const adress = contact[0]
+const phone = contact[1]
+const email = contact[2]
 
 nav1.textContent = siteContent['nav']['nav-item-1']
 nav2.textContent = siteContent['nav']['nav-item-2']
@@ -66,3 +92,25 @@ nav6.textContent = siteContent['nav']['nav-item-6']
 headerh1.textContent = siteContent['cta']['h1']
 headerImg.setAttribute('src', siteContent['cta']['img-src'])
 headerButton.textContent = siteContent['cta']['button']
+
+features.textContent = siteContent['main-content']['features-h4']
+about.textContent = siteContent['main-content']['about-h4']
+services.textContent = siteContent['main-content']['services-h4']
+product.textContent = siteContent['main-content']['product-h4']
+vision.textContent = siteContent['main-content']['vision-h4']
+
+text1.textContent = siteContent['main-content']['features-content']
+text2.textContent = siteContent['main-content']['about-content']
+text3.textContent = siteContent['main-content']['services-content']
+text4.textContent = siteContent['main-content']['product-content']
+text5.textContent = siteContent['main-content']['vision-content']
+
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
+contacth4.textContent = siteContent['contact']['contact-h4']
+
+adress.textContent = siteContent['contact']['address']
+phone.textContent = siteContent['contact']['phone']
+email.textContent = siteContent['contact']['email']
+
+footer.textContent = siteContent['footer']['copyright']
